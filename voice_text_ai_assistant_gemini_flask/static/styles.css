@@ -1,0 +1,64 @@
+*{ box-sizing: border-box; }
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  margin:0;
+  background:#0b0b0e;
+  color:#eaeaea;
+}
+.container{
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 20px;
+}
+h1{ margin: 0 0 8px; font-size: 28px;}
+.hint{ opacity: .8; margin-bottom: 16px; }
+.messages{
+  height: 60vh;
+  overflow-y: auto;
+  background: #121218;
+  border: 1px solid #222436;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+.msg{
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+.msg.user{
+  background: #1e2635;
+  align-self: flex-end;
+  margin-left: auto;
+}
+.msg.bot{
+  background: #1a1f2b;
+  border: 1px solid #2a2e42;
+}
+.controls{
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+#textInput{
+  flex:1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #24283b;
+  background: #111625;
+  color: #eaeaea;
+  outline: none;
+}
+button{
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #2a2e42;
+  background: #1b2230;
+  color:#eaeaea;
+  cursor: pointer;
+}
+button:disabled{ opacity: .5; cursor: not-allowed; }
+audio{ display:block; margin-top: 8px; width: 100%; }
