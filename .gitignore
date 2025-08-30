@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+
+# Virtual env
+env/
+venv/
+ENV/
+
+# VSCode
+.vscode/
+
+# Config / credenciais
+.env
+config.json
+
+# Áudios temporários
+*.wav
+*.mp3
+*.ogg
+*.flac
